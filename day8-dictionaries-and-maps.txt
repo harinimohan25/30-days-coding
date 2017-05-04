@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(raw_input())
+dictionary = {}
+for x in range(n):
+    k, v =  map(str, raw_input().strip().split(' '))
+    dictionary[k] = v
+
+while True:
+    ky = str(raw_input().strip())
+    if ky in dictionary:
+        print ky + "=" + str(dictionary[ky])
+    else:
+        print "Not found"
+   
+        
